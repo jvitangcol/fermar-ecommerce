@@ -57,9 +57,7 @@ export default function ProductsPage() {
         <h1 className="font-bold text-3xl">Product Management</h1>
         <Button>Add Product</Button>
       </div>
-      <div>
-        <DataTable columns={columns} data={data} />
-      </div>
+      <div>{/* <DataTable columns={columns} data={data} /> */}</div>
     </main>
   );
 }
