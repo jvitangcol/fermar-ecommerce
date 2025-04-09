@@ -51,7 +51,7 @@ export function NavMain({
                 <SidebarMenuButton tooltip={item.title}>
                   {item.icon && <item.icon />}
                   <Link href={item.url}>
-                    <span>{item.title}</span>
+                    <span className="text-lg">{item.title}</span>
                   </Link>
                   <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
                 </SidebarMenuButton>
