@@ -21,7 +21,7 @@ export function AddForm() {
 
           {/* Label and Inputs */}
           <div>
-            <div>
+            <div className="mb-2">
               <Label className="text-muted-foreground mb-2">Product Name</Label>
               <Input
                 type="text"
@@ -40,8 +40,84 @@ export function AddForm() {
         </div>
 
         {/* General information */}
-        <div className="p-5 row-span-3 bg-secondary rounded-sm border border-red-500">
+        <div className="p-5 row-span-3 bg-secondary rounded-sm">
           <h1 className="text-2xl font-medium mb-3">General Information </h1>
+
+          {/* Label and Inputs */}
+          <div>
+            <div className="mb-2">
+              <Label className="text-muted-foreground mb-2">Materials</Label>
+              <Input
+                type="text"
+                className="bg-primary-foreground border border-primary"
+              />
+              <span className="text-sm text-destructive">Error message</span>
+            </div>
+            <div className="mb-2">
+              <Label className="text-muted-foreground mb-2">Weight</Label>
+              <Input
+                type="text"
+                className="bg-primary-foreground border border-primary"
+              />
+              <span className="text-sm text-destructive">Error message</span>
+            </div>
+
+            <div className="mb-2">
+              <Label className="text-muted-foreground mb-2">Dimensions</Label>
+              <div className="grid grid-cols-3 gap-1">
+                {/* Length */}
+                <div className="flex items-baseline ">
+                  <p className="mr-2 text-muted-foreground">Length</p>
+                  <Input
+                    type="text"
+                    className="bg-primary-foreground border border-primary"
+                  />
+                </div>
+                {/* Width */}
+                <div className="flex items-baseline ">
+                  <p className="mr-2 text-muted-foreground">Width</p>
+                  <Input
+                    type="text"
+                    className="bg-primary-foreground border border-primary"
+                  />
+                </div>
+                {/* Height */}
+                <div className="flex items-baseline ">
+                  <p className="mr-2 text-muted-foreground">Height</p>
+                  <Input
+                    type="text"
+                    className="bg-primary-foreground border border-primary"
+                  />
+                </div>
+              </div>
+              <span className="text-sm text-destructive">Error message</span>
+            </div>
+
+            <div className="">
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <Label className="text-muted-foreground mb-2">Stocks</Label>
+                  <Input
+                    type="text"
+                    className="bg-primary-foreground border border-primary"
+                  />
+                  <span className="text-sm text-destructive">
+                    Error message
+                  </span>
+                </div>
+                <div>
+                  <Label className="text-muted-foreground mb-2">Price</Label>
+                  <Input
+                    type="text"
+                    className="bg-primary-foreground border border-primary"
+                  />
+                  <span className="text-sm text-destructive">
+                    Error message
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Products Category */}
@@ -49,7 +125,7 @@ export function AddForm() {
           <h1 className="text-2xl font-medium mb-3">Products Category</h1>
           {/* Label and Inputs */}
           <div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-3 mb-2">
               <div>
                 <Label className="text-muted-foreground mb-2">
                   Product Category
@@ -94,18 +170,18 @@ export function AddForm() {
           </div>
         </div>
 
-        {/* Description */}
-        <div className="p-5 row-span-2 bg-secondary rounded-sm border border-red-500">
+        {/* Photo Gallery */}
+        <div className="p-5 row-span-2 bg-secondary rounded-sm ">
           <h1 className="text-2xl font-medium mb-3">Photo Gallery</h1>
         </div>
 
         {/* Publish */}
-        <div className="p-5 row-span-2 bg-secondary rounded-sm border border-red-500">
+        <div className="p-5 row-span-2 bg-secondary rounded-sm">
           <h1 className="text-2xl font-medium mb-3">Publish</h1>
 
           {/* Label and Inputs */}
           <div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-3 mb-2">
               <div>
                 <Label className="text-muted-foreground mb-2">Status</Label>
                 <Select>
@@ -140,7 +216,7 @@ export function AddForm() {
 
             <div>
               <Label className="text-muted-foreground mb-2">
-                Product Category Short Description
+                Publish Schedule
               </Label>
               <Input
                 type="text"
@@ -152,9 +228,11 @@ export function AddForm() {
         </div>
 
         {/* Buttons */}
-        <div className="row-span-1 ju">
-          <Button variant={"ghost"}>Cancel</Button>
-          <Button>Submit</Button>
+        <div className="row-span-1">
+          <div className="flex gap-2 justify-end">
+            <Button variant={"secondary"}>Cancel</Button>
+            <Button>Submit</Button>
+          </div>
         </div>
       </form>
     </>
