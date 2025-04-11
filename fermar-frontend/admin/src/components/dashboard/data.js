@@ -47,7 +47,7 @@ export const data = {
       items: [
         {
           title: "Products Page",
-          url: "#",
+          url: "/dashboard/products/productId",
         },
         {
           title: "Create Product",

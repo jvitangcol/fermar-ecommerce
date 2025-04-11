@@ -65,7 +65,7 @@ export default async function ProductDetailsPage({
   const productId = (await params).productId;
 
   return (
-    <main className="flex flex-col gap-2 h-full mx-5 mb-5">
+    <main className="flex flex-col gap-2 h-full m-5">
       {/* Photos & Details */}
       <section className="grid grid-cols-2  gap-2 h-1/2">
         {/* Photos */}
