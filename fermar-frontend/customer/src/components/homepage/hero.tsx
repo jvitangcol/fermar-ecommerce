@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 // picture
-import hero from "@/components/homepage/hero.jpg";
+import hero from "@/assets/hero.jpg";
 import { Button } from "@/components/ui/button";
 
 // shadCN
