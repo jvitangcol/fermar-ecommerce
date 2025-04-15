@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 // components
 import { oswald, roboto } from "@/components/shared/fonts";
 import Header from "@/components/shared/header";
+import Footer from "@/components/shared/footer";
 
 import "./globals.css";
 import { TailwindIndicator } from "@/components/shared/tailwind-indicator";
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`${oswald.className} ${roboto.className} antialiased`}>
         <Header />
         {children}
+        <Footer />
         <TailwindIndicator />
       </body>
     </html>
