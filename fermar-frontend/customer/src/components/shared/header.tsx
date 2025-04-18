@@ -14,7 +14,7 @@ import { oswald } from "@/components/shared/fonts";
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 h-16 w-full px-5 z-50 bg-primary text-primary-foreground">
-      <div className="flex items-center justify-between my-3 xl:container mx-auto ">
+      <div className="flex items-center justify-between my-3 lg:container mx-auto ">
         <Link href={"/"}>
           <span className={`${oswald.className} text-3xl font-bold`}>
             Fermar
