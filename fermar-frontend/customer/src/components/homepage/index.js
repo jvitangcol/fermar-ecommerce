@@ -26,19 +26,25 @@ export const whyChooseFermar = [
   },
 ];
 
-export const whatWeDo = [
+export const firstWhatWeDo = [
   {
     title: "Manufacturing & Fabrication",
     description:
       "We produce top-tier jeepney parts, including pedal sets, flat bars, push rods, and hood lock vipers, using premium-grade stainless steel and metal.",
     src: hammerWrench,
   },
+];
+
+export const secondWhatWedo = [
   {
     title: "Custom Metal Molding",
     description:
       "Need a specialized part? Our team offers custom fabrication services to create metal components tailored to your needs.",
     src: forgeHammer,
   },
+];
+
+export const thirdWhatWeDo = [
   {
     title: "Commitment to Quality",
     description:
