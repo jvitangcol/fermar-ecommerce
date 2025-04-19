@@ -23,7 +23,7 @@ export function WhyChooseFermarSection() {
         <div className="flex flex-col md:flex-row flex-wrap lg:grid grid-cols-3  gap-3 justify-center items-center ">
           {whyChooseFermar.map((data) => {
             return (
-              <div className="lg:mx-auto ">
+              <div className="lg:mx-auto " key={data.title}>
                 <Card
                   key={data.title}
                   className="pt-0 w-[300px] h-[320px] xl:w-[400px] xl:h-[375px] gap-3 pb-3"
