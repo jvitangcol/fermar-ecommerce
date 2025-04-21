@@ -18,7 +18,10 @@ export default function ShopPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-1 lg:gap-2.5 justify-center">
             {products.map((product) => {
               return (
-                <Card key={product.id} className="py-0 rounded-none gap-2">
+                <Card
+                  key={product.id}
+                  className="bg-background py-0 rounded-none gap-2"
+                >
                   <CardHeader className="relative aspect-square w-full overflow-hidden p-0 gap-0">
                     <Image
                       src={product.image}

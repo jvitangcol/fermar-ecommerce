@@ -103,3 +103,30 @@ export const products = [
     image: productSix,
   },
 ];
+
+export const images = [
+  {
+    id: "1",
+    src: productOne,
+  },
+  {
+    id: "2",
+    src: productTwo,
+  },
+  {
+    id: "3",
+    src: productThree,
+  },
+  {
+    id: "4",
+    src: productFour,
+  },
+  {
+    id: "5",
+    src: productFive,
+  },
+  {
+    id: "6",
+    src: productSix,
+  },
+];
