@@ -7,6 +7,7 @@ import { ErrorMiddleware } from "./middleware/error.js";
 import connectDB from "./utils/db.js";
 
 import userRouter from "./routes/user.route.js";
+import productRouter from "./routes/product.route.js";
 
 dotenv.config();
 
@@ -33,7 +34,7 @@ app.listen(PORT, () => {
   connectDB();
 });
 
-app.use("/api/v1", userRouter);
+app.use("/api/v1", userRouter, productRouter);
 
 // API Testing
 app.get("/test", (req, res) => {
@@ -44,7 +45,7 @@ app.get("/test", (req, res) => {
 });
 
 // Unknown route
-// app.all("*", (req, res, next) => {
+// app.all(`*`, (req, res, next) => {
 //   const err = new Error(`Route not found`);
 
 //   err.statusCode = 404;
